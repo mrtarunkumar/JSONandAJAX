@@ -1,4 +1,4 @@
-// array with objects
+// array with objects //JSON
 var thePets = [
     {
         "name": "Meowsalot",
@@ -11,3 +11,6 @@ var thePets = [
         "favFood": "carrots"
     }
 ];
+
+//thePets[1].favFood
+
