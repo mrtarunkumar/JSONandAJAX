@@ -1,14 +1,13 @@
-// objects
-var myCat = {
-    "name": "Meowsalot",
-    "species": "cat",
-    "favFood": "tuna"
-};
-//myCat.favFood
-
-
-
-
-// arrays
-var myFavColours = ["blue", "green", "yellow", "red"];
-//myFavColours[1]
+// array with objects
+var thePets = [
+    {
+        "name": "Meowsalot",
+        "species": "cat",
+        "favFood": "tuna"
+    },
+    {
+        "name": "Barksalot",
+        "species": "dog",
+        "favFood": "carrots"
+    }
+];
