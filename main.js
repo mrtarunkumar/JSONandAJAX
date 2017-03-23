@@ -1,3 +1,4 @@
+var pageCounter = 1;
 var newDataContainer = document.getElementById("newData");
 var btn = document.getElementById("ftcData");
 
@@ -9,7 +10,7 @@ btn.addEventListener("click", function () {
     // to get data we use GET
     // to send data we can use POST
     // we want to get data from our json
-    ourRequest.open('GET', 'http://localhost:3000/json/data1.json');
+    ourRequest.open('GET', 'http://localhost:3000/json/data' + pageCounter + '.json');
     ourRequest.onload = function () {
         //assign our request to a variable
         var ourData = JSON.parse(ourRequest.responseText);
@@ -21,6 +22,10 @@ btn.addEventListener("click", function () {
 
     // Send the request.
     ourRequest.send();
+    pageCounter = pageCounter + 1;
+    if(pageCounter > 3){
+        btn.classList.add("hideme");
+    }
 });
 
 
